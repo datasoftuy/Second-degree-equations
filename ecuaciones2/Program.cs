@@ -10,22 +10,30 @@ namespace ecuaciones2
     {
         static void Main(string[] args)
         {
+            // Consultar esto:  double.TryParse(Console.ReadLine(), out c);
+
 
             double a = 0, b = 0, c = 0, x1 = 0, x2 = 0;
 
             Console.WriteLine("Sistemas de ecuaciones de segundo grado");
             
             Console.Write("Ingrese a ");
-            double.TryParse(Console.ReadLine(), out a);
+            a = Convert.ToInt64(Console.ReadLine());
+            
+           
 
             Console.Write("Ingrese b ");
-            double.TryParse(Console.ReadLine(), out b);
+            b = Convert.ToInt64(Console.ReadLine());
+           
 
             Console.Write("Ingrese c ");
-            double.TryParse(Console.ReadLine(), out c);
+            c = Convert.ToInt64(Console.ReadLine());
+            
 
             x1 = ((-b + Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a));
-            x1 = ((-b - Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a));
+            x2 = ((-b - Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a));
+
+
 
             
             // Codigo solo para verificar valor de x1 y x2
