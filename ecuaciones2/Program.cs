@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace ecuaciones2
 {
     class Program
@@ -24,9 +25,10 @@ namespace ecuaciones2
             double.TryParse(Console.ReadLine(), out c);
 
             x1 = ((-b + Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a));
+            x1 = ((-b - Math.Sqrt(Math.Pow(b, 2) - (4 * a * c))) / (2 * a));
 
-            Console.Write("x1 " + x1);
-
+            Console.WriteLine("x1 " + x1);
+            Console.WriteLine("x2 " + x2);
             Console.ReadKey();
         }
     }
